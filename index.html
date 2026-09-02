@@ -1,1 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Tracker v1</title>
+</head>
+<body>
+    <button id="send-event-btn">Send Event</button>
 
+    <script>
+        console.log("[Analytics] Tracker initialized");
+
+        document.getElementById("send-event-btn").addEventListener("click", function() {
+            const payload = { event_type: "click", target: "Send Event button", status: "success" };
+            console.log("Payload:", payload);
+        })
+    </script>
+</body>
+</html>
